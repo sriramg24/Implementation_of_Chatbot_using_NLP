@@ -12,9 +12,8 @@ from sklearn.linear_model import LogisticRegression
 ssl._create_default_https_context = ssl._create_unverified_context
 nltk.data.path.append(os.path.abspath("nltk_data"))
 nltk.download('punkt')
-
 # Load intents from the JSON file
-file_path = os.path.abspath("/Users/raghunandanms/Documents/Work/AICTE Internship 4/Implementation of Chatbot using NLP/Week-wise Report files/Week 1/intents.json")
+file_path = os.path.abspath("intents.json")
 with open(file_path, "r") as file:
     intents = json.load(file)
 
